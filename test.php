@@ -9,7 +9,10 @@
     <title>Document</title>
 </head>
 <body>
-    <p><?= $name ?></p>
-    <p><?php echo $name; ?></p>
+    <form action="test.php" method="POST">
+        <input type="hidden" value="roll" name="generateMove">
+        <input type="submit" name="fight" value="fight">
+    </form>
+    <p><?php echo $_POST["generateMove"]; ?></p>
 </body>
 </html>
